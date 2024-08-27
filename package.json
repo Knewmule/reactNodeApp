@@ -1,0 +1,20 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "engines": {
+    "node": "18.19.0",
+    "npm": "9.2.0"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "build" : "netlify deploy --prod"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2",
+    "netlify-lambda": "^2.0.16"
+  }
+}
