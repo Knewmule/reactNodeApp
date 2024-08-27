@@ -1,0 +1,34 @@
+functionsDirectory = "/var/local/www/w3/webdesign/learn/reactNodejsMongoStevenGrinder/reactNodeApp/server/functions"
+functionsDirectoryOrigin = "config-v1"
+headers = []
+redirects = []
+
+[functions]
+
+[functions."*"]
+
+[[plugins]]
+origin = "ui"
+package = "@netlify/plugin-lighthouse"
+pinned_version = "6"
+
+[plugins.inputs]
+
+[build]
+publish = "/var/local/www/w3/webdesign/learn/reactNodejsMongoStevenGrinder/reactNodeApp/server"
+publishOrigin = "default"
+functions = "/var/local/www/w3/webdesign/learn/reactNodejsMongoStevenGrinder/reactNodeApp/server/functions"
+
+[build.environment]
+
+[build.processing]
+
+[build.processing.css]
+
+[build.processing.html]
+
+[build.processing.images]
+
+[build.processing.js]
+
+[build.services]
