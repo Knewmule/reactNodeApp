@@ -9,13 +9,15 @@
   },
   "scripts": {
     "start": "node functions/app.js",
-    "dev" : "nodemon functions/app.js",
+    "dev": "nodemon functions/app.js",
     "build": "netlify deploy --prod"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "express": "^4.19.2",
+    "mongodb": "^6.8.0",
+    "mongoose": "^8.5.4",
     "netlify-cli": "^17.34.3",
     "netlify-lambda": "^2.0.16",
     "nodemon": "^3.1.4",
