@@ -44,7 +44,7 @@ node_modules/
 jspm_packages/
 
 #google oauth keys
-config/keys.js
+config/dev.js
 
 # Snowpack dependency directory (https://snowpack.dev/)
 web_modules/
