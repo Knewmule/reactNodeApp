@@ -20,7 +20,18 @@ const client = new MongoClient(uri, {
 });
 async function run() {
   try {
-    const app = express();
+    
+    // Connect the client to the server	(optional starting in v4.7)
+    await client.connect();
+    // Send a ping to confirm a successful connection
+    await client.db("Cluster0Production").command({ ping: 1 });
+    console.log("Pinged your deployment. You successfully connected to MongoDB!");
+    mongoose.connect(uri);
+require('../models/Users');
+require('../services/passport');
+
+
+const app = express();
 app.use(
     cookieSession(
         {
@@ -29,24 +40,14 @@ app.use(
         }
     )
 );
+app.use(passport.initialize());
+app.use(passport.session());
+require('../routes/authRoutes',app,router);
 
-    // Connect the client to the server	(optional starting in v4.7)
-    await client.connect();
-    // Send a ping to confirm a successful connection
-    await client.db("Cluster0Production").command({ ping: 1 });
-    console.log("Pinged your deployment. You successfully connected to MongoDB!");
-    mongoose.connect(uri);
-require('../models/Users');
-
-
-require('../routes/authRoutes')(app);
-require('../services/passport');
 // const PORT = process.env.PORT || 5000;
 
 // app.listen(PORT);
     //Netlify Code
-    app.use(passport.initialize());
-app.use(passport.session())
 app.use("/.netlify/functions/app", router);
 module.exports.handler = serverless(app);
 
@@ -56,9 +57,8 @@ module.exports.handler = serverless(app);
     await client.close();
   }
 }
-run().catch(console.dir);
 
-
+module.exports.handler =  run;
 
 
 

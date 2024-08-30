@@ -3,6 +3,10 @@ const GoogleStrategy = require('passport-google-oauth20').Strategy;
 const keys = require('../config/keys');
 const mongoose = require('mongoose');
 
+const commentSchema = new mongoose.Schema({
+    id: String
+});
+
 const User = mongoose.model('users');
 
 passport.serializeUser((user,done) =>{
@@ -17,10 +21,9 @@ passport.deserializeUser((id,done) =>{
 })
 
 passport.use(new GoogleStrategy({
-    clientID:keys.googleClientID,
+    clientID:'584633288965-u7u98u9qttljfmogp86cl3p8gucshrpf.apps.googleusercontent.com',
     clientSecret: keys.googleClientSecret,
-    callbackURL: '/auth/google/callback',
-    proxy: true    
+    callbackURL: '/auth/google/callback'    
 }, (accessToken, refreshToken, profile, done) =>{
     User.findOne({googleId: profile.id})
     .then((existingUser) =>{
