@@ -2,7 +2,7 @@ const express = require('express');
 const mongoose = require('mongoose');
 const cookieSession = require('cookie-session');
 const passport = require('passport');
-const keys = require('../config/keys');
+const keys = require('./config/keys');
 const serverless = require('serverless-http')
 // Added Mongo
 const { MongoClient, ServerApiVersion } = require('mongodb');
@@ -44,15 +44,15 @@ app.use(
 
 
 
-require('../models/Users');
+require('./models/Users');
 
 // app.use('../routes/authRoutes')
 
-require('../services/passport');
+require('./services/passport');
 
 app.use(passport.initialize());
 app.use(passport.session())
-require('../routes/authRoutes',app);
+require('./routes/authRoutes',app);
 // const PORT = process.env.PORT || 5000;
 
 // app.listen(PORT);
