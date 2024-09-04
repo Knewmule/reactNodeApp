@@ -8,18 +8,23 @@
     "npm": "9.2.0"
   },
   "scripts": {
-    "start": "node index.js",
+    "start": "node functions/app.js",
+    "dev": "nodemon functions/app.js",
     "build": "netlify deploy --prod"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "cookie-session": "^2.1.0",
     "express": "^4.19.2",
+    "mongodb": "^6.8.0",
+    "mongoose": "^8.5.4",
     "netlify-cli": "^17.34.3",
-    "netlify-lambda": "^2.0.16",
+    "nodemon": "^3.1.4",
+    "passport": "^0.5.3",
+    "passport-google-oauth20": "^2.0.0",
     "serverless-http": "^3.2.0"
   },
   "devDependencies": {
-    "netlify": "^13.1.21"
   }
 }

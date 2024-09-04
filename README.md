@@ -1,1 +1,27 @@
 # reactNodeApp
+console.cloud.google.com
+Google O auth Client secret and Id encrypted
+MongoDB Cloud Secrets
+Dev Secret
+-----BEGIN PGP MESSAGE-----
+
+jA0ECQMCFVxrkqW31TX/0sBEARVrN5XrPDSiYrX4C0J51AjqJ6tLcqNXeYKYwlLZ
+TiMYY9FYtRavW6YYieVrx41zi0aZ/Q3oDLAanFBMTq4Ry50sKbzOd6fp58dPIPh6
+QN1FAYBYomD0o1m/xA1VjdBOTQaru5s9sRWxQMnQt+P1sQ3J3EULKZjbnOJU4lik
+UhXvBo3Mg7PQqtG5z6VVqe67CQpuOT++NlLTe3spYhWtHilf/EqJRxcKr3wBxNCc
+JCqkUZCZaOqLKlrsEWIsrAwknkKGd8uc1CvcvNKldUHnJCQBTcqNkB5X3zNRL0wp
+r9mSJr3bTUGCGX/G//xolXrkmB0R1y1uSKX+UHFUU79u0geCu/Q=
+=GnhW
+-----END PGP MESSAGE-----
+Production secret 
+-----BEGIN PGP MESSAGE-----
+
+jA0ECQMC/OtDn4s97ub/0sB6AVuNcwiQSd2s7owXP2svk4cwqWjn7HqlkqNeXL1n
+q15IbCqLb9WQ4S519Sxbgmyf9de8Dv5VS1wqi8A2TEDSEYqhgaKRlNMv4Jwq/EX5
+1ZhM35oFQ8UqbANDf3E9BlGl28KrwYCiYV2ovKcnwlT3gEZc3TAO8KFQoleqxtie
+HPec3EA03zqhQXTOvu6j9bksnGtWyx099QfP2oMh4EmEg/eQ2cutsoLw6JnZKOi5
+Wn7DJyKgQYRr5V8zD8DYULVDyuabLK8/OlPDrFtveYg0+OiwiKqq+GOe219O54uE
+K3zKXZXl9Gq3WX0YTcXZrXz9lgPA99FtChZWIu/d/ctosa7+Gz214NRZjcjGelnK
+MWlElyXxeiyuLBOPGtIVfr2TBHGGUGM9EPZZCFyEzikduBdUF9Wz6b2GBBs=
+=hmvI
+-----END PGP MESSAGE-----
